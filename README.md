@@ -57,5 +57,3 @@ When you're ready to start coding, request an API key to interact with Anvil fro
 If JavaScript feels challenging today, write pseudocode and consider edge cases!
 We care about your **thinking process** more than perfect syntax.
 
-If writing JavaScript is a challenge today, write out pseudo-code and still think of cases to handle! We are interested in how you think and how you approach solving problems, not if you remember the specific encantation on how to use JavaScript.
-
