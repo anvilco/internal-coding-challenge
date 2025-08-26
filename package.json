@@ -5,24 +5,6 @@
   "repository": "git@github.com:fostimus/package-template.git",
   "author": "Derek Foster <derekfoster94@gmail.com>",
   "license": "MIT",
-  // remove this publishConfig if going to publish in NPM
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
-  },
-  // the main entry point for the package - when you import the package, e.g.
-  // import thing, { otherThing } from 'package-template'
-  "main": "dist/index.js",
-  // other entry points for the package - when you import the package, e.g.
-  // import { thing, otherThing } from 'package-template/something'
-  "exports": {
-    "./something": "./dist/something/index.js",
-    "./something/*": "./dist/usage/*.js"
-  },
-  // files to include in the package. you won't be able to import files from the package
-  // without adding them here.
-  "files": [
-    "dist/**"
-  ],
   "scripts": {
     "build": "swc src -d dist --strip-leading-paths",
     "build:watch": "yarn build --watch",
@@ -36,8 +18,9 @@
     "lint:quiet:fix": "yarn lint:quiet --fix"
   },
   "dependencies": {
-    "lodash": "^4.17.21",
-    "dotenv": "16.4.7"
+    "@anvilco/anvil": "3.3.2",
+    "dotenv": "16.4.7",
+    "lodash": "^4.17.21"
   },
   "devDependencies": {
     "@babel/core": "^7.24.5",
@@ -71,6 +54,7 @@
     "prettier": "^3.2.5",
     "rimraf": "^5.0.5",
     "sinon": "^12.0.1",
-    "sinon-chai": "^3.5.0"
+    "sinon-chai": "^3.5.0",
+    "yargs": "^17.3.1"
   }
 }
