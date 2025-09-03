@@ -30,7 +30,7 @@ Your job is to write a script that performs **three tasks** (order does not matt
    * File naming: Use the EID.
      Example: `pdfs/<eid>.pdf`.
 
-3. **Sort all forms by prevalence (most to least frequent)**
+3. **Sort all forms by prevalence**
 
    * Output format:
 
